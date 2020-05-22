@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        body{
+            background:url('images/bg3.jpg') repeat-x;
+        } 
+        #photos li{
+            display: inline; 
+        }
+        #photos img {
+		    display: block;
+			width:130px;
+		    height: 130px;
+		    margin-bottom: 5px;
+		}
+		#photos a {
+		    background: #fff;
+		    float: left;
+			margin: 15px 20px;
+		    padding: 10px 10px;
+		    text-align: center;
+		    color:black;
+		    font-size: 18px;
+			text-decoration: none;
+			transform: rotate(-2deg);
+		    box-shadow:3px 3px 15px rgba(0,0,0,0.9);
+		}
+		#photos li:nth-child(2n) a {
+		    position: relative;
+		    transform: rotate(0deg);
+		}
+		#photos li:nth-child(3n) a {
+		    position: relative;
+		    top:5px;
+			transform: rotate(-10deg);
+		}
+		#photos li:nth-child(4n) a {
+			position: relative;
+			transform: rotate(4deg);
+		}
+		#photos li:nth-child(5n) a {
+		    position: relative;
+		    top:-2px;
+			right:3px;
+		}
+		#photos li:nth-child(6n) a {
+		    position: relative;
+			transform: rotate(-10deg);
+		}
+		#photos li a:hover{
+			position: relative;
+			transform: scale(1.25);
+			box-shadow: 3px 3px 6px rgba(0, 0, 0,0.7);
+		}
+    </style>
+</head>
+<body>
+	<ul id="photos">
+	    <li><a href="#"><img src="images/11.jpg" alt="相识"/>相识</a></li>
+	    <li><a href="#"><img src="images/22.jpg" alt="凝视"/>凝视</a></li>
+	    <li><a href="#"><img src="images/33.jpg" alt="甜睡"/>甜睡</a></li>
+	    <li><a href="#"><img src="images/44.jpg" alt="逗乐"/>逗乐</a></li>
+	    <li><a href="#"><img src="images/55.jpg" alt="奔跑"/>奔跑</a></li>
+	    <li><a href="#"><img src="images/66.jpg" alt="漠视"/>漠视</a></li>
+	</ul>
+</body>
+</html>
